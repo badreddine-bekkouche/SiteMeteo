@@ -16,7 +16,7 @@ Technologies utilisées
 
 Installation
 - Clonez ce dépôt sur votre machine locale.
-- Ouvrez le fichier index.html dans votre navigateur préféré. ( le fichier se trouve dans le dossier fr )
+- Ouvrez le fichier index.html dans votre navigateur préféré. ( le fichier se trouve dans le dossier fr ) ou cliquer sur ce lien : https://badreddine-bekkouche.github.io/SiteMeteo/fr/
 
 Utilisation
 - Saisissez le nom de la ville dans le champ de recherche.
