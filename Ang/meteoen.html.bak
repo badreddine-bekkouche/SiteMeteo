@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	     <head>
+	     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	     <link href="..\css\style.css" rel="stylesheet">
+	     </head>
+
+<body id="x" >
+   
+               <script src='metedoen.js' type='text/javascript'></script>
+               <script type="text/javascript" src="metedoen.js "></script>
+
+<div class="header" >
+  <img class="logo" src="..\IMAGES\meteo1.png">
+  <h1>Weather</h1>
+                <a href="..\Ang\meteoen.html""> <img src="../IMAGES/drpan.png"></img> </a> 
+            <a href="..\fr\meteo.html""> <img src="../IMAGES/drpfr.jpeg"></img> </a> 
+</div>
+
+			<div  class="row">
+ 			<div class="col-3 col-s-3 menu">
+    				<ul>
+      				<li><a>City : </a><span id="ville"></span></li>
+      				<li><a>Temperature :  </a><span id="temperature_label"></span> °F</li>
+      				<li><a>Wind speed : <span id="vent_donnes"></a></span><a> miles/hour</a></li>
+      				<li> <a href="..\SiteAn\meteoen.html">Change the city</a></li>
+    				</ul>
+ 			</div>
+
+  						<div class="col-6 col-s-9">
+    						<h1>Weather :  <span id="status"></span></h1>
+    					</div>
+
+  							<div class="col-3 col-s-12">
+    							<div class="aside">
+     						 
+    							</div>
+ 							 </div>
+							</div>
+
+              
+               
+              
+             
+
+
+
+</body>
+</html>
+
+

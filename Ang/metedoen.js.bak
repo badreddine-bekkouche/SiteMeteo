@@ -1,0 +1,35 @@
+saisie = prompt("Enter the name of the city :");
+url = 'https://api.openweathermap.org/data/2.5/weather?q=' + saisie + 		'&appid=eb3e55ca0093756f2541d5ad27c5021c&units=imperial';
+
+ let requete = new XMLHttpRequest();
+  requete.open('GET', url);
+  requete.responseType = 'json';
+  requete.send();
+
+
+  requete.onload = function() {
+        let reponse = requete.response;
+        let ville = reponse.name;
+        let temperature = reponse.main.temp;
+        let vent = reponse.wind.speed;
+        let condition = reponse.weather[0].main;
+    
+
+
+
+
+                document.querySelector('#ville').innerHTML = saisie;
+                document.querySelector('#temperature_label').textContent = temperature;
+                document.querySelector('#vent_donnes').textContent = vent;
+                document.querySelector('#status').textContent = condition;
+
+        
+       
+        
+       
+        
+        
+       
+      
+  
+}

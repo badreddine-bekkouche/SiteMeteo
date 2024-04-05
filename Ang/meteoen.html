@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	     <head>
+	     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	     <link href="..\css\style.css" rel="stylesheet">
+	     </head>
+
+<body id="x" >
+   
+               <script src='metedoen.js' type='text/javascript'></script>
+               <script type="text/javascript" src="metedoen.js "></script>
+
+
+<div class="header" >
+  <img class="logo"  src="..\IMAGES\meteo1.png">
+  <a href="..\Ang\meteoen.html"><img class="flags"   src="../IMAGES/drpan.png"></a>
+  <a href="..\fr\index.html"><img class="flags"  href="..\fr\index.html" src="../IMAGES/drpfr.jpeg"></a>
+  <h1>Weather</h1>
+</div>
+
+			<div  class="row">
+ 			<div class="col-3 col-s-3 menu">
+    				<ul>
+      				<li><a>City : </a><span id="ville"></span></li>
+      				<li><a>Temperature :  </a><span id="temperature_label"></span> °F</li>
+					<li><a>Température resentie :  </a><span id="feel"></span> °F</li>
+      				<li><a>Wind speed : <span id="vent_donnes"></a></span><a> miles/hour</a></li>
+              <li><a>Humidity : <span id="humidity"></a></span><a> %</a></li>
+      				<li> <a href="..\Ang\meteoen.html">Change the city</a></li>
+    				</ul>
+ 			</div>
+
+  						<div class="col-6 col-s-9">
+    						<h1>Weather :  <span id="status"></span></h1>
+							<img id="a" src="">
+    					</div>
+
+  							<div class="col-3 col-s-12">
+    							<div class="aside">
+     						  <div ><span id="dateheure"></span></div>
+                    <script>
+                    function pause(ms) 
+                    {
+                    return new Promise(resolve => setTimeout(resolve, ms));
+                    }
+
+                    async function afficherDate() 
+                    {
+                   while(true) 
+                   {
+                   await pause(1000);
+                   var cejour = new Date();
+                   var options = {weekday: "long", year: "numeric", month: "long", day: "2-digit"};
+                   var date = cejour.toLocaleDateString("en-EN", options);
+                   var heure = ("0" + cejour.getHours()).slice(-2) + ":" + ("0" + cejour.getMinutes()).slice(-2) + ":" + ("0" + cejour.getSeconds()).slice(-2);
+                   var dateheure = date + " " + heure;
+                    var dateheure = dateheure.replace(/(^\w{1})|(\s+\w{1})/g, lettre => lettre.toUpperCase());
+                   document.getElementById('dateheure').innerHTML = dateheure;
+                   }
+                   }
+                  afficherDate();
+                 </script><br>
+                 <a>Sunrise : <span id="sunrise"></a></span><a> </a><br><br>
+                  <a>Sunset : <span id="sunset"></a></span><a> </a>
+    							</div>
+ 							 </div>
+							</div>
+
+              
+               
+              
+             
+
+
+
+</body>
+</html>
+
+
