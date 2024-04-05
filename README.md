@@ -25,4 +25,6 @@ Utilisation :
 - Les données météorologiques et l'icône correspondante s'afficheront sur la page.
 
 Remarque
+- Vous pouvez entrer soit le nom de la ville, soit le code postal pour obtenir les données météorologiques.
 - Certaines images illustrant les conditions météorologiques peuvent ne pas s'afficher correctement sur GitHub. Pour une expérience optimale, veuillez cloner le dépôt et ouvrir les fichiers localement dans votre navigateur.
+
